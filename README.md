@@ -90,7 +90,7 @@ for train_idx, test_idx in tscv.split(X):
 
 print("Time Series Cross-Validation MAE:", round(np.mean(maes), 2))
 
-# Step 5: Visualization (Unique Style)
+# Step 5: Visualization 
 plt.figure(figsize=(12, 6))
 sample_product = model_data['coffee_name'].unique()[0]
 plot_df = model_data[model_data['coffee_name'] == sample_product].tail(60)
